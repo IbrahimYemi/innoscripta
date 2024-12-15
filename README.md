@@ -23,7 +23,7 @@ This project contains a React frontend and a Laravel backend, along with a MySQL
    - Build the Docker images for the frontend, backend, and database.
    - Start the containers and link them together.
 
-3. The frontend (React) will be available at: [http://localhost:3000](http://localhost:3000)
+3. The frontend (React) will be available at: [http://localhost](http://localhost)
 4. The backend (Laravel) will be available at: [http://localhost:8000](http://localhost:8000)
 
 ## Environment Variables
@@ -47,14 +47,14 @@ This will stop and remove the containers.
 
 ## Notes
 
-- **Laravel Backend**: Make sure to configure your `.env` file in the backend (Laravel) for database connection:
+- **Laravel Backend**: Make sure to configure your `.env` file in the backend and confirm the docker-compose for database connection:
   ```env
   DB_CONNECTION=mysql
   DB_HOST=db
   DB_PORT=3306
-  DB_DATABASE=your_db_name
-  DB_USERNAME=your_db_user
-  DB_PASSWORD=your_db_password
+  DB_DATABASE=db_name
+  DB_USERNAME=db_user
+  DB_PASSWORD=db_password
   ```
 
 - **React Frontend**: The frontend is already configured to fetch data from the backend at `http://localhost:8000`.
